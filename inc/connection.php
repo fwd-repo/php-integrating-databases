@@ -9,4 +9,10 @@ try {
   exit;
 }
 
-echo "Connected to the database";
+try {
+  $results = $db->query("SELECT title, category FROM Media");
+  echo "Retrieved Results";
+} catch (Exception $e) {
+  echo "Unable to retrieved results";
+  exit;
+}
