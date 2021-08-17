@@ -16,4 +16,4 @@ try {
   exit;
 }
 
-var_dump($results->fetchAll(PDO::FETCH_ASSOC));
+$catalog = $results->fetchAll(PDO::FETCH_ASSOC);
